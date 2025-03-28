@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz"
+      layout:decorate="~{/default/layout}">
+<body>
+<div layout:fragment="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- About Story Section -->
+    <section class="about-story">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Our Story</h2>
+                        <p class="lead">We are passionate about coffee and crafting the perfect cup for our customers.</p>
+                        <p>The Coffee Shop was founded in 2005 by coffee enthusiasts who believed that everyone deserves to experience the rich flavors of premium, ethically sourced coffee. What started as a small coffee cart in downtown has now grown into a beloved community establishment.</p>
+                        <p>Our philosophy is simple: source the best beans, roast them with care, and serve them with love. We believe that coffee is more than just a drink – it's an experience that brings people together.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="/default/images/about-story.jpg" alt="Our Coffee Shop Story" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To provide exceptional coffee experiences while promoting sustainable farming practices and supporting the communities that grow our beans.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be the most loved coffee brand known for quality, sustainability, and creating meaningful connections through the perfect cup.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Quality, sustainability, community, passion, and integrity guide everything we do - from bean to cup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline -->
+    <section class="journey-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Journey</h2>
+                <p>The path that led us to where we are today</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h4>The Beginning</h4>
+                        <p>Started as a small coffee cart in downtown, serving locally roasted coffee to morning commuters.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <div class="timeline-content">
+                        <h4>First Shop Opens</h4>
+                        <p>Opened our first brick-and-mortar location, expanding our menu to include pastries and specialty drinks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <h4>Farm Direct Sourcing</h4>
+                        <p>Established direct relationships with coffee farms in Colombia and Ethiopia, ensuring fair trade practices.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h4>Roasting Facility</h4>
+                        <p>Opened our own roasting facility to ensure quality control and freshness in every batch.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h4>Sustainability Initiative</h4>
+                        <p>Launched our sustainability initiative, implementing eco-friendly packaging and carbon-neutral shipping.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h4>Today</h4>
+                        <p>Continuing to grow while staying true to our roots, with five locations and an online store serving customers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Meet Our Team</h2>
+                <p>The passionate people behind your favorite cup of coffee</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="/default/images/team-1.jpg" alt="Jason Miller" class="img-fluid rounded">
+                        </div>
+                        <div class="member-info">
+                            <h4>Jason Miller</h4>
+                            <p>Founder & Head Roaster</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="/default/images/team-2.jpg" alt="Elena Rodriguez" class="img-fluid rounded">
+                        </div>
+                        <div class="member-info">
+                            <h4>Elena Rodriguez</h4>
+                            <p>Master Barista</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="/default/images/team-3.jpg" alt="David Chen" class="img-fluid rounded">
+                        </div>
+                        <div class="member-info">
+                            <h4>David Chen</h4>
+                            <p>Sustainability Director</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Beans Section -->
+    <section class="beans-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="beans-image">
+                        <img src="/default/images/coffee-beans.jpg" alt="Our Coffee Beans" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="beans-content">
+                        <h2>Our Coffee Beans</h2>
+                        <p>We carefully select beans from the finest coffee-growing regions around the world. From the high altitudes of Ethiopia to the volcanic soils of Colombia, each origin imparts unique flavors to our coffee.</p>
+                        <p>Our master roasters bring decades of experience to the roasting process, carefully developing flavor profiles that highlight the natural characteristics of each bean. We roast in small batches to ensure freshness and consistency.</p>
+                        <a href="/shop" class="btn btn-primary">Shop Our Coffee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner text-center">
+                <h2>Experience Our Coffee Today</h2>
+                <p>Visit one of our locations or order online to taste the difference quality makes.</p>
+                <div class="cta-buttons">
+                    <a href="/shop" class="btn btn-primary me-3">Shop Now</a>
+                    <a href="/contact-us" class="btn btn-outline-light">Find Our Stores</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

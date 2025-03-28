@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz"
+      layout:decorate="~{/default/layout}">
+<body>
+<div layout:fragment="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Our Store</h3>
+                        <p>123 Coffee Street<br>Brew City, BC 10001<br>United States</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+1 234 567 8901<br>+1 234 567 8902</p>
+                        <p>Mon-Fri: 7:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@thecoffee.com<br>support@thecoffee.com</p>
+                        <p>We'll respond within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us a Message</h2>
+                        <p>We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="name">Your Name*</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="email">Your Email*</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="subject">Subject*</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Your Message*</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-wrapper">
+                        <h2>Find Us</h2>
+                        <div class="map-container">
+                            <!-- This would be replaced with an actual map in a real implementation -->
+                            <img src="/default/images/map.jpg" alt="Our Location" class="img-fluid">
+                        </div>
+                        <div class="store-hours mt-4">
+                            <h4>Store Hours</h4>
+                            <ul class="hours-list">
+                                <li><span>Monday - Friday:</span> 7:00 AM - 8:00 PM</li>
+                                <li><span>Saturday:</span> 8:00 AM - 9:00 PM</li>
+                                <li><span>Sunday:</span> 8:00 AM - 6:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Locations</h2>
+                <p>Visit us at one of our coffee shops</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="/default/images/location-1.jpg" alt="Downtown Location" class="img-fluid">
+                        </div>
+                        <div class="location-info">
+                            <h4>Downtown</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Brew City, BC 10001</p>
+                            <p><i class="fas fa-phone"></i> +1 234 567 8901</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="/default/images/location-2.jpg" alt="Westside Location" class="img-fluid">
+                        </div>
+                        <div class="location-info">
+                            <h4>Westside</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> 456 Bean Avenue, Brew City, BC 10002</p>
+                            <p><i class="fas fa-phone"></i> +1 234 567 8902</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="/default/images/location-3.jpg" alt="Eastside Location" class="img-fluid">
+                        </div>
+                        <div class="location-info">
+                            <h4>Eastside</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> 789 Roast Road, Brew City, BC 10003</p>
+                            <p><i class="fas fa-phone"></i> +1 234 567 8903</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-outline-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions</p>
+            </div>
+            <div class="accordion" id="contactFaq">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Do you offer catering services?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#contactFaq">
+                        <div class="accordion-body">
+                            Yes, we offer catering for events of all sizes. From corporate meetings to weddings, we can provide coffee service that will impress your guests. Please contact us at least 48 hours in advance to discuss your requirements.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do you ship your coffee internationally?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#contactFaq">
+                        <div class="accordion-body">
+                            Yes, we ship our coffee beans to select countries. International shipping rates vary based on location. Please check our shipping policy page for more details or contact our customer service team.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How can I apply for a job at The Coffee Shop?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#contactFaq">
+                        <div class="accordion-body">
+                            We're always looking for passionate coffee lovers to join our team! You can submit your resume through our careers page or drop it off at any of our locations. We'll contact you if there's a suitable position available.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

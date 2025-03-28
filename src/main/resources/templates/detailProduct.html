@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{default/layout}">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết sản phẩm</title>
+</head>
+<body>
+<section layout:fragment="main-content">
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Cột hình ảnh sản phẩm -->
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+          <img th:src="@{default/images/coffee-1.jpg}" class="img-fluid product-thumbnail">
+        </div>
+        <!-- Cột thông tin sản phẩm -->
+        <div class="col-md-8">
+          <h3 class="product-title" th:text="${product.tenSanPham}"></h3>
+          <p class="product-description" th:text="${product.moTa}"></p>
+          <strong class="product-price" th:text="${product.gia} + ' VND'"></strong>
+          <p class="product-quantity">Số lượng: <span th:text="${product.soLuong}"></span></p>
+
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

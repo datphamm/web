@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img src="/default/images/logo.jpg" alt="Coffee Shop Logo">
+                    <h3>The Coffee</h3>
+                </div>
+                <p>Experience the finest coffee beans sourced ethically from around the world. Our passion is brewing perfection in every cup.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Opening Hours</h4>
+                <ul class="opening-hours">
+                    <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+                    <li>Saturday: 8:00 AM - 9:00 PM</li>
+                    <li>Sunday: 8:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Brew City</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 8901</li>
+                    <li><i class="fas fa-envelope"></i> info@thecoffee.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="copyright">
+                    <p>&copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></span> The Coffee Shop. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

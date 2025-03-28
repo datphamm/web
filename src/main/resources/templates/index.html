@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz"
+      layout:decorate="~{/default/layout}">
+<body>
+<div layout:fragment="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>The Coffee House</h1>
+                        <h2>The best <span class="text-primary">local farming</span> coffee experience in town</h2>
+                        <p>Discover our premium coffee selection made from ethically sourced beans from around the world. Every cup tells a story of passion, craftsmanship, and sustainable practices.</p>
+                        <a href="/shop" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="/default/images/Place Your Design Here (Double Click to Edit)1.jpg" alt="Coffee Cup" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img th:src="@{/default/images/Layer 1.jpg}" alt="About Us" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>About Us</h2>
+                        <p class="lead">Passionate about coffee since 2005</p>
+                        <p>We started as a small coffee shop with a big dream - to serve the perfect cup of coffee. Today, we source our beans directly from farmers around the world, ensuring fair trade practices and sustainable farming.</p>
+                        <p>Our master roasters carefully craft each blend to bring out the unique flavors and aromas that make our coffee special. We believe in quality, community, and the perfect brew.</p>
+                        <a href="/about-us" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Store</h2>
+                <p>Discover our best-selling coffee varieties loved by customers worldwide</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/default/images/coffee-1.jpg" alt="Espresso Classic" class="img-fluid">
+                            <div class="product-tag">Best Seller</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Espresso Classic</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(120)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$8.99</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/default/images/coffee-2.jpg" alt="French Vanilla" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h4>French Vanilla</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(98)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$7.49</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/default/images/coffee-3.jpg" alt="Caramel Macchiato" class="img-fluid">
+                            <div class="product-tag">New</div>
+                        </div>
+                        <div class="product-info">
+                            <h4>Caramel Macchiato</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(64)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$9.99</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/default/images/coffee-4.jpg" alt="Mocha Delight" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h4>Mocha Delight</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(86)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">$8.49</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/shop" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gift Voucher Section -->
+    <section class="gift-voucher-section py-5">
+        <div class="container text-center">
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Left Section -->
+                    <div class="bg-green-200 p-8 flex flex-col justify-center items-center md:w-1/2">
+                        <div class="bg-white px-4 py-2 rounded-lg shadow-md mb-4">
+                            <h2 class="text-2xl font-bold">Gift Voucher</h2>
+                        </div>
+                        <p class="text-center mb-4">Give the gift of great coffee to your loved ones with our exclusive gift vouchers.</p>
+                        <button class="bg-black text-white px-4 py-2 rounded-lg">Claim Voucher here</button>
+                    </div>
+                    <!-- Right Section -->
+                    <div class="relative md:w-1/2">
+                        <img th:src="@{default/images/Gift.jpg}" class="w-full h-full object-cover" alt="Gift Voucher Coffee" />
+                        <div class="absolute bottom-4 right-4 bg-green-200 px-4 py-2 rounded-lg shadow-md">
+                            <p class="text-xl font-bold">1 Free<br/>Cup of Coffee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Blog</h2>
+                <p>Explore the latest coffee trends, tips, and stories</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/default/images/blog-1.jpg" alt="Blog Post 1" class="img-fluid">
+                        <h4>The Art of Brewing</h4>
+                        <p>Learn how to brew the perfect cup of coffee at home with our expert tips.</p>
+                        <a href="/blog/the-art-of-brewing" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/default/images/blog-2.jpg" alt="Blog Post 2" class="img-fluid">
+                        <h4>Sustainable Coffee Farming</h4>
+                        <p>Discover how ethical sourcing supports farmers and the environment.</p>
+                        <a href="/blog/sustainable-coffee" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <img src="/default/images/blog.jpg" alt="Blog Post 3" class="img-fluid">
+                        <h4>Coffee and Your Health</h4>
+                        <p>Explore the surprising health benefits of drinking coffee every day.</p>
+                        <a href="/blog/coffee-health-benefits" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contactus-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Reach out to us with any inquiries.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4>Our Address</h4>
+                        <p>123 Coffee Street, Bean Town, CO 56789</p>
+                        <h4>Email</h4>
+                        <p>support@coffeehouse.com</p>
+                        <h4>Phone</h4>
+                        <p>+1 234 567 890</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

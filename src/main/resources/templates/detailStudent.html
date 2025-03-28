@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{default/layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section layout:fragment="main-content">
+    <div class="untree_co-section product-section before-footer-section">
+        <div class="container">
+            <div class="row">
+                <!-- Start Column 2 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                    <img th:src="@{default/images/product-1.png}" class="img-fluid product-thumbnail">
+                </div>
+                <div class="col-md-8">
+                    <h3 class="product-title" th:text="${student.first_name + '-' + student.last_name}"></h3>
+                    <strong class="product-price" th:text="${student.email}"></strong>
+
+                    <span class="icon-cross">
+								<img th:src="@{default/images/cross.svg}" class="img-fluid">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

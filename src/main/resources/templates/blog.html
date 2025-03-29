@@ -1,199 +1,215 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="https://www.ultraq.net.nz"
-      layout:decorate="~{/default/layout}">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="https://www.ultraq.net.nz"
+    layout:decorate="~{/default/layout}">
+
 <body>
-<div layout:fragment="main-content">
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Coffee Blog</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
+    <div layout:fragment="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Coffee Blog</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
 
-    <!-- Blog Section -->
-    <section class="blog-section">
-        <div class="container">
-            <div class="row">
-                <!-- Blog Posts -->
-                <div class="col-lg-8">
-                    <!-- Blog Post 1 -->
-                    <div class="blog-post">
-                        <div class="blog-image">
-                            <img src="/default/images/blog-1.jpg" alt="The Art of Coffee Brewing" class="img-fluid rounded">
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="far fa-calendar-alt"></i> May 15, 2023</span>
-                                <span><i class="far fa-user"></i> By Admin</span>
-                                <span><i class="far fa-comments"></i> 24 Comments</span>
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Blog Posts -->
+                    <div class="col-lg-8">
+                        <!-- Blog Post 1 -->
+                        <div class="blog-post">
+                            <div class="blog-image">
+                                <img src="/default/images/blog-1.jpg" alt="The Art of Coffee Brewing"
+                                    class="img-fluid rounded">
                             </div>
-                            <h2><a href="/blog/the-art-of-coffee-brewing">The Art of Coffee Brewing: Techniques for the Perfect Cup</a></h2>
-                            <p>Discover the secrets to brewing the perfect cup of coffee at home with our comprehensive guide to different brewing methods, from pour-over to French press, espresso, and more.</p>
-                            <div class="blog-tags">
-                                <span class="tag">Brewing</span>
-                                <span class="tag">Coffee Tips</span>
-                                <span class="tag">Techniques</span>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar-alt"></i> May 15, 2023</span>
+                                    <span><i class="far fa-user"></i> By Admin</span>
+                                    <span><i class="far fa-comments"></i> 24 Comments</span>
+                                </div>
+                                <h2><a href="/blog/the-art-of-coffee-brewing">The Art of Coffee Brewing: Techniques for
+                                        the Perfect Cup</a></h2>
+                                <p>Discover the secrets to brewing the perfect cup of coffee at home with our
+                                    comprehensive guide to different brewing methods, from pour-over to French press,
+                                    espresso, and more.</p>
+                                <div class="blog-tags">
+                                    <span class="tag">Brewing</span>
+                                    <span class="tag">Coffee Tips</span>
+                                    <span class="tag">Techniques</span>
+                                </div>
+                                <a href="/blog/the-art-of-coffee-brewing" class="btn btn-outline-primary">Read More</a>
                             </div>
-                            <a href="/blog/the-art-of-coffee-brewing" class="btn btn-outline-primary">Read More</a>
                         </div>
+
+                        <!-- Blog Post 2 -->
+                        <div class="blog-post">
+                            <div class="blog-image">
+                                <img src="/default/images/blog-2.jpg" alt="Coffee Bean Origins"
+                                    class="img-fluid rounded">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar-alt"></i> April 28, 2023</span>
+                                    <span><i class="far fa-user"></i> By Elena</span>
+                                    <span><i class="far fa-comments"></i> 18 Comments</span>
+                                </div>
+                                <h2><a href="/blog/coffee-bean-origins">Coffee Bean Origins: A Journey Around the
+                                        World</a></h2>
+                                <p>Take a virtual journey through the world's most renowned coffee-growing regions. From
+                                    the highlands of Ethiopia to the volcanic soils of Colombia, learn how geography and
+                                    climate impact flavor profiles.</p>
+                                <div class="blog-tags">
+                                    <span class="tag">Origins</span>
+                                    <span class="tag">Beans</span>
+                                    <span class="tag">Regions</span>
+                                </div>
+                                <a href="/blog/coffee-bean-origins" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 3 -->
+                        <div class="blog-post">
+                            <div class="blog-image">
+                                <img src="/default/images/blog.jpg" alt="Sustainable Coffee Farming"
+                                    class="img-fluid rounded">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar-alt"></i> April 10, 2023</span>
+                                    <span><i class="far fa-user"></i> By David</span>
+                                    <span><i class="far fa-comments"></i> 32 Comments</span>
+                                </div>
+                                <h2><a href="/blog/sustainable-coffee-farming">Sustainable Coffee Farming: Supporting
+                                        Farmers and the Environment</a></h2>
+                                <p>Explore how sustainable farming practices are transforming the coffee industry,
+                                    benefiting local communities, and preserving ecosystems. Learn about fair trade,
+                                    shade-grown, and organic certifications.</p>
+                                <div class="blog-tags">
+                                    <span class="tag">Sustainability</span>
+                                    <span class="tag">Farming</span>
+                                    <span class="tag">Environment</span>
+                                </div>
+                                <a href="/blog/sustainable-coffee-farming" class="btn btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="blog-pagination">
+                            <ul class="pagination">
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
 
-                    <!-- Blog Post 2 -->
-                    <div class="blog-post">
-                        <div class="blog-image">
-                            <img src="/default/images/blog-2.jpg" alt="Coffee Bean Origins" class="img-fluid rounded">
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <!-- Search Widget -->
+                        <div class="sidebar-widget search-widget">
+                            <h4>Search</h4>
+                            <form class="search-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search blogs...">
+                                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="far fa-calendar-alt"></i> April 28, 2023</span>
-                                <span><i class="far fa-user"></i> By Elena</span>
-                                <span><i class="far fa-comments"></i> 18 Comments</span>
-                            </div>
-                            <h2><a href="/blog/coffee-bean-origins">Coffee Bean Origins: A Journey Around the World</a></h2>
-                            <p>Take a virtual journey through the world's most renowned coffee-growing regions. From the highlands of Ethiopia to the volcanic soils of Colombia, learn how geography and climate impact flavor profiles.</p>
-                            <div class="blog-tags">
-                                <span class="tag">Origins</span>
-                                <span class="tag">Beans</span>
-                                <span class="tag">Regions</span>
-                            </div>
-                            <a href="/blog/coffee-bean-origins" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
 
-                    <!-- Blog Post 3 -->
-                    <div class="blog-post">
-                        <div class="blog-image">
-                            <img src="/default/images/blog-3.jpg" alt="Sustainable Coffee Farming" class="img-fluid rounded">
+                        <!-- Categories Widget -->
+                        <div class="sidebar-widget categories-widget">
+                            <h4>Categories</h4>
+                            <ul class="categories-list">
+                                <li><a href="#">Brewing Techniques <span>(12)</span></a></li>
+                                <li><a href="#">Coffee Origins <span>(8)</span></a></li>
+                                <li><a href="#">Coffee Culture <span>(15)</span></a></li>
+                                <li><a href="#">Coffee Recipes <span>(10)</span></a></li>
+                                <li><a href="#">Sustainability <span>(7)</span></a></li>
+                                <li><a href="#">Barista Tips <span>(9)</span></a></li>
+                            </ul>
                         </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span><i class="far fa-calendar-alt"></i> April 10, 2023</span>
-                                <span><i class="far fa-user"></i> By David</span>
-                                <span><i class="far fa-comments"></i> 32 Comments</span>
-                            </div>
-                            <h2><a href="/blog/sustainable-coffee-farming">Sustainable Coffee Farming: Supporting Farmers and the Environment</a></h2>
-                            <p>Explore how sustainable farming practices are transforming the coffee industry, benefiting local communities, and preserving ecosystems. Learn about fair trade, shade-grown, and organic certifications.</p>
-                            <div class="blog-tags">
-                                <span class="tag">Sustainability</span>
-                                <span class="tag">Farming</span>
-                                <span class="tag">Environment</span>
-                            </div>
-                            <a href="/blog/sustainable-coffee-farming" class="btn btn-outline-primary">Read More</a>
-                        </div>
-                    </div>
 
-                    <!-- Pagination -->
-                    <nav class="blog-pagination">
-                        <ul class="pagination">
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!-- Sidebar -->
-                <div class="col-lg-4">
-                    <!-- Search Widget -->
-                    <div class="sidebar-widget search-widget">
-                        <h4>Search</h4>
-                        <form class="search-form">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search blogs...">
-                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                        <!-- Recent Posts Widget -->
+                        <div class="sidebar-widget recent-posts-widget">
+                            <h4>Recent Posts</h4>
+                            <div class="recent-post">
+                                <div class="recent-post-image">
+                                    <img src="/default/images/recent-post-1.jpg" alt="Cold Brew vs. Iced Coffee"
+                                        class="img-fluid">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">Cold Brew vs. Iced Coffee: What's the Difference?</a></h5>
+                                    <span><i class="far fa-calendar-alt"></i> May 5, 2023</span>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-
-                    <!-- Categories Widget -->
-                    <div class="sidebar-widget categories-widget">
-                        <h4>Categories</h4>
-                        <ul class="categories-list">
-                            <li><a href="#">Brewing Techniques <span>(12)</span></a></li>
-                            <li><a href="#">Coffee Origins <span>(8)</span></a></li>
-                            <li><a href="#">Coffee Culture <span>(15)</span></a></li>
-                            <li><a href="#">Coffee Recipes <span>(10)</span></a></li>
-                            <li><a href="#">Sustainability <span>(7)</span></a></li>
-                            <li><a href="#">Barista Tips <span>(9)</span></a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Recent Posts Widget -->
-                    <div class="sidebar-widget recent-posts-widget">
-                        <h4>Recent Posts</h4>
-                        <div class="recent-post">
-                            <div class="recent-post-image">
-                                <img src="/default/images/recent-post-1.jpg" alt="Cold Brew vs. Iced Coffee" class="img-fluid">
+                            <div class="recent-post">
+                                <div class="recent-post-image">
+                                    <img src="/default/images/recent-post-2.jpg" alt="Coffee and Health"
+                                        class="img-fluid">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">The Health Benefits of Drinking Coffee Daily</a></h5>
+                                    <span><i class="far fa-calendar-alt"></i> April 22, 2023</span>
+                                </div>
                             </div>
-                            <div class="recent-post-info">
-                                <h5><a href="#">Cold Brew vs. Iced Coffee: What's the Difference?</a></h5>
-                                <span><i class="far fa-calendar-alt"></i> May 5, 2023</span>
+                            <div class="recent-post">
+                                <div class="recent-post-image">
+                                    <img src="/default/images/recent-post-3.jpg" alt="Coffee Grind Size"
+                                        class="img-fluid">
+                                </div>
+                                <div class="recent-post-info">
+                                    <h5><a href="#">Why Coffee Grind Size Matters for Flavor</a></h5>
+                                    <span><i class="far fa-calendar-alt"></i> April 15, 2023</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="recent-post">
-                            <div class="recent-post-image">
-                                <img src="/default/images/recent-post-2.jpg" alt="Coffee and Health" class="img-fluid">
-                            </div>
-                            <div class="recent-post-info">
-                                <h5><a href="#">The Health Benefits of Drinking Coffee Daily</a></h5>
-                                <span><i class="far fa-calendar-alt"></i> April 22, 2023</span>
-                            </div>
-                        </div>
-                        <div class="recent-post">
-                            <div class="recent-post-image">
-                                <img src="/default/images/recent-post-3.jpg" alt="Coffee Grind Size" class="img-fluid">
-                            </div>
-                            <div class="recent-post-info">
-                                <h5><a href="#">Why Coffee Grind Size Matters for Flavor</a></h5>
-                                <span><i class="far fa-calendar-alt"></i> April 15, 2023</span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Tags Widget -->
-                    <div class="sidebar-widget tags-widget">
-                        <h4>Popular Tags</h4>
-                        <div class="tags-cloud">
-                            <a href="#" class="tag">Brewing</a>
-                            <a href="#" class="tag">Espresso</a>
-                            <a href="#" class="tag">Arabica</a>
-                            <a href="#" class="tag">Robusta</a>
-                            <a href="#" class="tag">Latte Art</a>
-                            <a href="#" class="tag">Fair Trade</a>
-                            <a href="#" class="tag">Organic</a>
-                            <a href="#" class="tag">Barista</a>
-                            <a href="#" class="tag">Pour Over</a>
-                            <a href="#" class="tag">Coffee Shop</a>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter Widget -->
-                    <div class="sidebar-widget newsletter-widget">
-                        <h4>Newsletter</h4>
-                        <p>Subscribe to our newsletter to receive the latest updates and exclusive offers.</p>
-                        <form class="newsletter-form-sidebar">
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <!-- Tags Widget -->
+                        <div class="sidebar-widget tags-widget">
+                            <h4>Popular Tags</h4>
+                            <div class="tags-cloud">
+                                <a href="#" class="tag">Brewing</a>
+                                <a href="#" class="tag">Espresso</a>
+                                <a href="#" class="tag">Arabica</a>
+                                <a href="#" class="tag">Robusta</a>
+                                <a href="#" class="tag">Latte Art</a>
+                                <a href="#" class="tag">Fair Trade</a>
+                                <a href="#" class="tag">Organic</a>
+                                <a href="#" class="tag">Barista</a>
+                                <a href="#" class="tag">Pour Over</a>
+                                <a href="#" class="tag">Coffee Shop</a>
                             </div>
-                        </form>
+                        </div>
+
+                        <!-- Newsletter Widget -->
+                        <div class="sidebar-widget newsletter-widget">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe to our newsletter to receive the latest updates and exclusive offers.</p>
+                            <form class="newsletter-form-sidebar">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 </body>
+
 </html>

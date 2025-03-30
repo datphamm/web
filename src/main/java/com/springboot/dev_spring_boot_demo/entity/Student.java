@@ -2,7 +2,9 @@ package com.springboot.dev_spring_boot_demo.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+
 @Entity
 @Table(name = "student")
 public class Student {
@@ -12,16 +14,20 @@ public class Student {
     private int id;
     @NotBlank(message = "First name is mandatory")
     @Size(min = 2, max = 50, message = "First name must be between 2 and 50 characters")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "First name must contain only letters")
     @Column(name = "first_name")
     private String first_name;
+
     @NotBlank(message = "Last name is mandatory")
     @Size(min = 2, max = 50, message = "Last name must be between 2 and 50 characters")
+    @Pattern(regexp = "^[a-zA-Z]+$", message = "Last name must contain only letters")
     @Column(name = "last_name")
     private String last_name;
+
     @NotBlank(message = "Email is mandatory")
+    @Pattern(regexp = "^[\\w.%+-]+@gmail\\.com$", message = "Email must be a valid Gmail address")
     @Column(name = "email")
     private String email;
-
 
     public Student() {
     }

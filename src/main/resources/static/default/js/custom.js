@@ -1,18 +1,18 @@
 /**
  * The Coffee Shop - Custom JavaScript
  */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     'use strict';
 
     // Initialize Bootstrap Tooltips
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function(tooltipTriggerEl) {
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
     // Initialize Bootstrap Popovers
     const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-    popoverTriggerList.map(function(popoverTriggerEl) {
+    popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl);
     });
 
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact Form Validation
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
             // Simple form validation
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Remove is-invalid class on input focus
         contactForm.querySelectorAll('input, textarea').forEach(input => {
-            input.addEventListener('focus', function() {
+            input.addEventListener('focus', function () {
                 this.classList.remove('is-invalid');
             });
         });
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     addToCartButtons.forEach(button => {
         if (button.textContent.includes('Add to Cart')) {
-            button.addEventListener('click', function(event) {
+            button.addEventListener('click', function (event) {
                 event.preventDefault();
 
                 // Get product information
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 toast.show();
 
                 // Remove toast after it's hidden
-                notification.addEventListener('hidden.bs.toast', function() {
+                notification.addEventListener('hidden.bs.toast', function () {
                     notification.remove();
                 });
             });
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Newsletter Form Validation
     const newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(event) {
+        newsletterForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
             const emailInput = newsletterForm.querySelector('input[type="email"]');
@@ -187,14 +187,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Remove is-invalid class on input focus
-        newsletterForm.querySelector('input[type="email"]').addEventListener('focus', function() {
+        newsletterForm.querySelector('input[type="email"]').addEventListener('focus', function () {
             this.classList.remove('is-invalid');
         });
     }
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
 
             if (href !== '#') {
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
     backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
     document.body.appendChild(backToTopButton);
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.pageYOffset > 300) {
             backToTopButton.classList.add('show');
         } else {
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    backToTopButton.addEventListener('click', function() {
+    backToTopButton.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
